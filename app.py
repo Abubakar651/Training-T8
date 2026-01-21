@@ -7,3 +7,6 @@ def home():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=3000)
+@app.route("/")
+def home():
+    return "Hello from Jenkins Pipeline! (Version 2 - UPDATED)"
